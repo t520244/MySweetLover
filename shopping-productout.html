@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MY SWEET LOVER</title>
+    <link rel="shortcut icon" href="img/mysweetlover.png">
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+    <link rel="stylesheet" href="style/sweetlover.css">
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous"> -->
+
+</head>
+
+<body>
+    <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">
+            <img src="img/MYSWEETLOVER.svg" width="40" alt=""> MY SWEET L<i class="fas fa-heart"></i>VER</a>
+
+        <div class="dropdown ml-auto">
+            <button class="btn btn-sm btn-cart" data-toggle="dropdown" data-flip="false">
+                        <i class="fas fa-shopping-cart text-dark fa-2x" aria-hidden="true"></i>
+                        <span class="badge badge-pill badge-danger">12</span>
+           </button>
+
+
+            <div class="dropdown-menu dropdown-menu-right" style="min-width: 400px">
+                <div class="px-4 py-3">
+                    <h6>已選擇商品</h6>
+                    <table class="table table-sm">
+                        <tbody>
+                            <tr>
+                                <td class="align-middle text-center"></td>
+                                <td class="align-middle">黑巧克力（Dark chocolate）</td>
+                                <td class="align-middle">1 盒</td>
+                                <td class="align-middle text-right">$999</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <a href="shopping-productout.html" class="btn btn-primary btn-block">結帳去</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container main-contant py-5">
+        <h1 class="text-center mb-3 text-secondary"> MY SWEET LOVER 結帳</h1>
+        <div class="form-row text-center">
+            <div class="col-12 col-sm">
+                <div class="alert alert-color alert-rounded" role="alert">
+                    1.輸入訂單資料
+                </div>
+            </div>
+            <div class="col-12 col-sm">
+                <div class="alert alert-light  alert-rounded" role="alert">
+                    2.送貨及付款方式
+                </div>
+            </div>
+            <div class="col-12 col-sm">
+                <div class="alert alert-light alert-rounded" role="alert">
+                    3.完成
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center mt-5">
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-header card-color" id="headingOne">
+                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            顯示購物車細節
+                            </button>
+                    </div>
+                </div>
+                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                    <table class="table table-sm">
+                        <thead>
+                            <tr>
+                                <th width="30"></th>
+                                <th width="100"></th>
+                                <th>商品名稱</th>
+                                <th width="100">數量</th>
+                                <th width="80">小計</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="align-middle text-center">
+                                    <a href="#removeModal" class="text-muted" data-toggle="modal" data-title="刪除 黑巧克力（Dark chocolate）1 盒" data-backdrop="static">
+                                        <i class="fas fa-trash-alt" aria-hidden="true"></i>
+                                    </a>
+                                </td>
+
+                                <td class="align-middle">
+                                    <img src="img/01.png" width="100" alt="">
+                                </td>
+                                <td class="align-middle">黑巧克力（Dark chocolate）</td>
+                                <td class="align-middle">1 盒</td>
+                                <td class="align-middle text-right">$999</td>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="alert alert-color text-center mt-5" role="alert">
+            訂購人資訊
+        </div>
+        <form class="needs-validation" novalidate>
+            <div class="form-row">
+                <div class="col-md-6 mb-3">
+                    <label for="validationDefault01">姓名</label>
+                    <input type="text" class=" form-control " id="validationDefault01 " placeholder="Name " required>
+                    <div class="invalid-feedback ">
+                        請輸入姓名。
+                    </div>
+                </div>
+                <div class="col-md-6 mb-3 ">
+                    <label for="validationDefault02 ">E-mail</label>
+                    <input type="E-mail " class="form-control " id="validationDefault02 " placeholder="E-mail " required>
+                    <div class="invalid-feedback ">
+                        請輸入E-mail。
+                    </div>
+                </div>
+            </div>
+            <div class="form-row ">
+                <div class="col-md-6 mb-3 " required>
+                    <label for="validationDefault03 ">國家</label>
+                    <select class="custom-select " id="validationDefault03 ">
+                        <option selected>請選擇國家</option>
+                        <option value="1 ">臺灣</option>
+                        <option value="2 ">Two</option>
+                        <option value="3 ">Three</option>
+                      </select>
+                    <div class="invalid-feedback ">請選擇國家</div>
+                </div>
+                <div class="col-md-3 mb-3 ">
+                    <label for="validationDefault04 ">城市</label>
+                    <select class="custom-select " id="validationDefault04 ">
+                        <option selected>請選擇城市</option>
+                        <option value="1 ">臺北市</option>
+                        <option value="2 ">新北市</option>
+                        <option value="3 ">......</option>
+                      </select>
+                    <div class="invalid-feedback ">請選擇城市</div>
+                </div>
+                <div class="col-md-3 mb-3 ">
+                    <label for="validationDefault05 ">郵遞區號</label>
+                    <input type="text " class="form-control " id="validationDefault05 " placeholder="Zip" required>
+                    <div class="invalid-feedback ">
+                        請輸入郵遞區號。
+                    </div>
+                </div>
+            </div>
+            <div class="form-row ">
+                <div class="col-md-12 mb-3 ">
+                    <label for="validationDefault03 ">地址</label>
+                    <input type="text " class="form-control " id="validationDefault03 " placeholder="Address" required>
+                    <div class="invalid-feedback ">
+                        請輸入地址。
+                    </div>
+                </div>
+            </div>
+
+            <button class="btn btn-out text-white mt-3" type="submit "> <a href="shopping-productout-01.html ">送貨及付款方式 : 下一步</a></button>
+
+        </form>
+
+
+
+
+
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="removeModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-shop">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/all.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,426 @@
+                        @import "../node_modules/bootstrap/scss/bootstrap";
+                        // Required
+                        @import "../node_modules/bootstrap/scss/functions";
+                        @import "../stylesheets/helpers/variables";
+                        // @import "../stylesheets/helpers/carousel";
+                        // @import "../stylesheets/helpers/flex";
+                        @import "../node_modules/bootstrap/scss/mixins";
+                        // Optional
+                        @import "../node_modules/bootstrap/scss/reboot";
+                        @import "../node_modules/bootstrap/scss/type";
+                        @import "../node_modules/bootstrap/scss/images";
+                        @import "../node_modules/bootstrap/scss/code";
+                        @import "../node_modules/bootstrap/scss/grid";
+                        // hearder 客製化
+                        .fas.fa-heart {
+                            color: rgb(248, 153, 248);
+                        }
+                        
+                        .header-carousel-item {
+                            height: 580px;
+                        }
+                        
+                        .bg-cover {
+                            background-size: cover;
+                            background-position: center center;
+                        }
+                        
+                        @media(max-width: 1198px) {
+                            .header-carousel-item {
+                                height: 500px;
+                            }
+                        }
+                        
+                        @media(max-width: 981px) {
+                            .header-carousel-item {
+                                height: 400px;
+                            }
+                        }
+                        
+                        @media(min-width: 480px) and (max-width: 767px) {
+                            .header-carousel-item {
+                                height: 300px;
+                            }
+                        }
+                        
+                        @media (max-width: 479px) {
+                            .header-carousel-item {
+                                height: 188.5px;
+                            }
+                        }
+                        
+                        // 輪播客製化
+                        .carousel-indicators .active {
+                            background-color: transparent;
+                        }
+                        
+                        .carousel-indicators span {
+                            color: rgba(243, 162, 232, 0.466);
+                            padding-left: 0.8rem;
+                        }
+                        
+                        .carousel-indicators span:hover {
+                            color: rgb(243, 162, 232);
+                            padding-left: 0.8rem;
+                        }
+                        
+                        .carousel-control-prev span {
+                            color: rgba(243, 162, 232, 0.247);
+                            padding-left: 2rem;
+                        }
+                        
+                        .carousel-control-prev span:hover {
+                            color: rgb(243, 162, 232);
+                            padding-left: 2rem;
+                        }
+                        
+                        .carousel-control-next span {
+                            color: rgba(243, 162, 232, 0.247);
+                            padding-right: 2rem;
+                        }
+                        
+                        .carousel-control-next span:hover {
+                            color: rgb(243, 162, 232);
+                            padding-right: 2rem;
+                        }
+                        
+                        @media(max-width: 1198px) {
+                            .carousel-control-prev span {
+                                padding-left: 1rem;
+                            }
+                            .carousel-control-prev span:hover {
+                                padding-left: 1rem;
+                            }
+                            .carousel-control-next span {
+                                padding-right: 1rem;
+                            }
+                            .carousel-control-next span:hover {
+                                padding-right: 1rem;
+                            }
+                            .btn-many {
+                                position: absolute;
+                                top: 3rem;
+                                left: 1.6rem;
+                                // width: 80%;
+                            }
+                            .btn-finish {
+                                position: absolute;
+                                top: 6rem;
+                                left: 1.6rem;
+                                // width: 80%;
+                            }
+                        }
+                        
+                        @media(max-width: 981px) {
+                            .carousel-control-prev span {
+                                padding-left: 1rem;
+                            }
+                            .carousel-control-prev span:hover {
+                                padding-left: 1rem;
+                            }
+                            .carousel-control-next span {
+                                padding-right: 1rem;
+                            }
+                            .carousel-control-next span:hover {
+                                padding-right: 1rem;
+                            }
+                            .btn-many {
+                                position: absolute;
+                                top: 5rem;
+                                left: 1rem;
+                                // width: 80%;
+                            }
+                            .btn-finish {
+                                position: absolute;
+                                top: 10rem;
+                                left: 1rem;
+                                // width: 80%;
+                            }
+                        }
+                        
+                        @media(min-width: 480px) and (max-width: 767px) {
+                            .carousel-control-next,
+                            .carousel-control-prev {
+                                display: none;
+                            }
+                            .btn-many {
+                                position: absolute;
+                                top: 12rem;
+                                left: 3rem;
+                                // width: 80%;
+                            }
+                            .btn-finish {
+                                position: absolute;
+                                top: 18rem;
+                                left: 3rem;
+                                // width: 80%;
+                            }
+                        }
+                        
+                        @media(max-width: 479px) {
+                            .carousel-control-next,
+                            .carousel-control-prev {
+                                display: none;
+                            }
+                            .btn-many {
+                                position: absolute;
+                                top: 10rem;
+                                left: 2.5rem;
+                                // width: 80%;
+                            }
+                            .btn-finish {
+                                position: absolute;
+                                top: 14rem;
+                                left: 2.5rem;
+                                // width: 80%;
+                            }
+                        }
+                        
+                        .box-shadow {
+                            box-shadow: 0 3px 5px rgba(0, 0, 0, .16); //水平移動  垂直移動  擴散   rgba
+                            transition: box-shadow .3s;
+                        }
+                        
+                        .box-shadow:hover {
+                            box-shadow: 0 4px 10px rgba(0, 0, 0, .24); //水平移動  垂直移動  擴散   rgba
+                        }
+                        
+                        // 購物車
+                        .btn-cart {
+                            background-color: transparent;
+                            position: relative;
+                        }
+                        
+                        .dropdown .btn-cart .badge {
+                            position: absolute;
+                            top: -1px;
+                            right: -1px;
+                        }
+                        
+                        .dropdown-menu-right {
+                            right: 0;
+                            left: auto;
+                        }
+                        
+                        // list-group 
+                        .list-group .active {
+                            border: theme-color("sweetlover");
+                            background-color: theme-color("sweetlover");
+                        }
+                        
+                        .list-group .active:hover {
+                            color: #fff;
+                        }
+                        
+                        .list-group-item-action {
+                            // color: theme-color("sweetlover");
+                            background-color: grays("100");
+                        }
+                        
+                        .list-group-item-action:hover {
+                            color: theme-color("sweetlover");
+                            background-color: grays("100");
+                        }
+                        
+                        .list-group-item-action:focus {
+                            background-color: grays("100");
+                        }
+                        
+                        .list-group a.fa-globe-america {
+                            margin-left: 1rem;
+                            border: 2px solid red;
+                        }
+                        
+                        // .list-group-item-action:active {
+                        //     color: theme-color("sweetlover");
+                        // }
+                        @media(max-width: 981px) {}
+                        
+                        //商品
+                        .card .box-01,
+                        .card .box-02 {
+                            color: #000;
+                            text-decoration: none;
+                        }
+                        
+                        .card-product {
+                            position: relative;
+                        }
+                        
+                        .card-footer {
+                            position: absolute;
+                            padding: 0;
+                            opacity: 0;
+                            width: 100%;
+                            height: 100%;
+                            transition: all .5s;
+                            background-color: rgba(3, 3, 3, 0.479);
+                        }
+                        
+                        .card-footer:hover {
+                            opacity: 1;
+                        }
+                        
+                        .btn-many {
+                            position: absolute;
+                            top: 4.5rem;
+                            left: 1.6rem;
+                            width: 80%;
+                        }
+                        
+                        .btn-finish {
+                            position: absolute;
+                            top: 7.5rem;
+                            left: 1.6rem;
+                            width: 80%;
+                        }
+                        
+                        .btn-many,
+                        .btn-finish {
+                            text-align: center;
+                            border: 2px solid rgba(248, 246, 246, 0.623);
+                            color: rgba(255, 254, 254, 0.747);
+                            background-color: rgba(0, 0, 0, 0.568);
+                        }
+                        
+                        .btn-many:hover,
+                        .btn-finish:hover {
+                            border: 2px solid theme-color("sweetlover");
+                            color: theme-color("sweetlover");
+                            // background-color: rgba(0, 0, 0, 0.568);
+                        }
+                        
+                        @media(max-width: 1198px) {
+                            .btn-many {
+                                position: absolute;
+                                top: 3rem;
+                                left: 1.6rem;
+                                // width: 80%;
+                            }
+                            .btn-finish {
+                                position: absolute;
+                                top: 6rem;
+                                left: 1.6rem;
+                                // width: 80%;
+                            }
+                        }
+                        
+                        @media(max-width: 981px) {
+                            .btn-many {
+                                position: absolute;
+                                top: 5rem;
+                                left: 1rem;
+                                // width: 80%;
+                            }
+                            .btn-finish {
+                                position: absolute;
+                                top: 10rem;
+                                left: 1rem;
+                                // width: 80%;
+                            }
+                        }
+                        
+                        @media(min-width: 480px) and (max-width: 767px) {
+                            .btn-many {
+                                position: absolute;
+                                top: 12rem;
+                                left: 3rem;
+                                // width: 80%;
+                            }
+                            .btn-finish {
+                                position: absolute;
+                                top: 18rem;
+                                left: 3rem;
+                                // width: 80%;
+                            }
+                        }
+                        
+                        @media(max-width: 479px) {
+                            .btn-many {
+                                position: absolute;
+                                top: 10rem;
+                                left: 2rem;
+                                // width: 80%;
+                            }
+                            .btn-finish {
+                                position: absolute;
+                                top: 14rem;
+                                left: 2rem;
+                                // width: 80%;
+                            }
+                        }
+                        
+                        //商品頁面
+                        .card-color {
+                            background-color: rgba(229, 143, 218, 0.267);
+                        }
+                        
+                        .card-color .btn {
+                            color: #000;
+                            text-decoration: none;
+                        }
+                        
+                        .btn-shop {
+                            border: 2px solid rgba(248, 246, 246, 0.781);
+                            color: rgba(5, 5, 5, 0.555);
+                            background-color: rgba(235, 123, 185, 0.541);
+                        }
+                        
+                        .btn-shop:hover {
+                            border: 2px solid rgba(235, 123, 185, 0.37);
+                            color: rgb(5, 5, 5);
+                            background-color: rgba(235, 123, 185, 0.596);
+                        }
+                        
+                        @media(max-width: 1198px) {
+                            .item-image .rounded {
+                                width: 400px;
+                            }
+                        }
+                        
+                        @media(max-width: 981px) {
+                            .item-image .rounded {
+                                width: 400px;
+                            }
+                        }
+                        
+                        @media(min-width: 480px) and (max-width: 767px) {
+                            .item-image .rounded {
+                                width: 500px;
+                            }
+                        }
+                        
+                        @media(max-width: 479px) {
+                            .item-image .rounded {
+                                width: 300px;
+                            }
+                        }
+                        
+                        //結帳頁面
+                        .alert-rounded {
+                            border-radius: 50px;
+                        }
+                        
+                        .main-contant .alert-color {
+                            background-color: rgba(229, 143, 218, 0.267);
+                        }
+                        
+                        .btn-out {
+                            border: 2px solid rgba(248, 246, 246, 0.781);
+                            background-color: rgba(235, 123, 185, 0.541);
+                        }
+                        
+                        .btn-out:hover {
+                            border: 2px solid rgba(235, 123, 185, 0.37);
+                            background-color: rgba(235, 123, 185, 0.596);
+                        }
+                        
+                        .btn-out a {
+                            text-decoration: none;
+                            color: rgba(5, 5, 5, 0.555);
+                        }
+                        
+                        .btn-out a:hover {
+                            text-decoration: none;
+                            color: rgb(5, 5, 5);
+                        }
